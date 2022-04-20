@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { Quasar } from 'quasar'
+import { Quasar, AppFullscreen } from 'quasar'
 import ja from 'quasar/lang/ja'
 
 import '@quasar/extras/material-icons/material-icons.css'
@@ -13,7 +13,9 @@ const vueApp = createApp(App)
 
 vueApp.use(Quasar, {
   lang: ja,
-  plugins: {}
+  plugins: {
+    AppFullscreen
+  }
 })
 
 vueApp.use(createRouter({
